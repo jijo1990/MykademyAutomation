@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <parameter name="browserName" value="chrome"/>
+  <test thread-count="5" name="testngtestingRoleManagement(failed)">
+    <parameter name="password" value="123456ab"/>
+    <parameter name="username" value="thanveer.a+25@enfintechnologies.com"/>
+    <classes>
+      <class name="mykademyTests.RoleManagement">
+        <methods>
+          <include name="initBrowser"/>
+          <include name="MoveToRoleManagement"/>
+          <include name="getMykademy"/>
+          <include name="Login_Check"/>
+          <include name="DeleteRole"/>
+          <include name="CreateNewRole"/>
+          <include name="ActivateRole"/>
+        </methods>
+      </class> <!-- mykademyTests.RoleManagement -->
+    </classes>
+  </test> <!-- testngtestingRoleManagement(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

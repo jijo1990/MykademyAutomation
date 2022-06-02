@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Suite1" verbose="1" >
+  <parameter name="browserName" value="chrome"/>
+  <test name="testngtestingOne" >
+    <parameter name="username" value="thanveer.a+25@enfintechnologies.com"/>
+  	<parameter name="password" value="123456ab"/>
+    <classes>
+       <class name="mykademyTests.Login" />
+    </classes>
+  </test>  
+
+</suite>

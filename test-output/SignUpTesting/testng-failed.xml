@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SignUpTesting]" guice-stage="DEVELOPMENT">
+  <parameter name="browserName" value="chrome"/>
+  <test thread-count="5" name="testngtestingSignUp(failed)">
+    <parameter name="password" value="Password@123"/>
+    <parameter name="phone" value="88955416654"/>
+    <parameter name="email" value="jijo.joseph+10@mykademy.com"/>
+    <parameter name="username" value="Jijo Joseph10"/>
+    <classes>
+      <class name="mykademyTests.SignUp">
+        <methods>
+          <include name="initBrowser"/>
+          <include name="teaDown"/>
+          <include name="getMykademy"/>
+          <include name="signUpTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- mykademyTests.SignUp -->
+    </classes>
+  </test> <!-- testngtestingSignUp(failed) -->
+</suite> <!-- Failed suite [SignUpTesting] -->
